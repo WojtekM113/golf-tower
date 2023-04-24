@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class DestroyOnCollision : MonoBehaviour {
+public class DestroyOnCollision : MonoBehaviour, ICollectableItem {
+    public void OnCollected() {
+        Debug.Log("hit! and destroyed");
+        Destroy(this.gameObject);
 
-    string playerTag = "Player";
-
-    private void OnTriggerEnter2D(Collider2D collision) {
-
-        if (collision.tag == playerTag)
-        {
-            Debug.Log("hit!");
-            Destroy(this.gameObject);
-        }
     }
-}
+       
+    public void Collect() {
+ 
+        OnCollected();
+    }
+ }
+
 

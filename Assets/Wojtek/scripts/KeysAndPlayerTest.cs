@@ -1,29 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class KeysAndPlayerTest : MonoBehaviour, Icollectable {
-
-    public List<int> keys = new List<int>();
-    int key;
-    string _COLLECTABLE = "collectable";
-
-    
-    void Update() {
-        if (keys.Count == 3)
-        {
-            Debug.Log("You have 3 keys");
-        }
-    }
-
-    private void Keys() {
-        keys.Add(key);
+public class KeysAndPlayerTest : MonoBehaviour, ICollectableItem {
+   
+   
+    public void Collect() {
+         
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == _COLLECTABLE)
-        {
-            Keys();
+       ICollectableItem collectableItem = collision.GetComponent<ICollectableItem>();
+        if (collectableItem != null) { 
+        
+            collectableItem.Collect();
         }
     }
 }
