@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class KeysAndPlayerTest : MonoBehaviour, ICollectableItem {
    
-   
+     
     public void Collect() {
          
     }
