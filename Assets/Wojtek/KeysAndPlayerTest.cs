@@ -2,13 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeysAndPlayerTest : MonoBehaviour, Icollectable {
+public class KeysAndPlayerTest : MonoBehaviour {
 
     public List<int> keys = new List<int>();
     int key;
-    string _COLLECTABLE = "collectable";
 
-    
     void Update() {
         if (keys.Count == 3)
         {
@@ -21,7 +19,7 @@ public class KeysAndPlayerTest : MonoBehaviour, Icollectable {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == _COLLECTABLE)
+        if (collision.gameObject.tag == "keyTag")
         {
             Keys();
         }
