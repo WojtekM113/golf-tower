@@ -6,13 +6,9 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour  {
 
-     
-    float speed = 10f;
+   
     void Update() {
-
-        float horizontalInput = (Input.GetAxis("Horizontal")) * speed * Time.deltaTime;
-        transform.Translate(horizontalInput, 0, 0);
-        
+ 
       
     }
 
