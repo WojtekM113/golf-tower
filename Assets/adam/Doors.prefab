@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6658054977291597873}
   - component: {fileID: 6658054977291597874}
-  - component: {fileID: 6658054977291597875}
   - component: {fileID: 6658054977291597872}
+  - component: {fileID: 5969607851874920572}
   m_Layer: 0
   m_Name: Doors
   m_TagString: Untagged
@@ -61,20 +61,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.94}
   m_EdgeRadius: 0
---- !u!114 &6658054977291597875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6658054977291597836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2aa2a31814523e40bb454032f3f075a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  keyScriptableObject: {fileID: 11400000, guid: fcdf829807b7dca4791c376c54e440c5, type: 2}
-  howManyKeysDoDoorsNeed: 3
 --- !u!61 &6658054977291597872
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -101,6 +87,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.26, y: 3.48}
   m_EdgeRadius: 0
+--- !u!114 &5969607851874920572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6658054977291597836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e6bf8c352fee0940ab877cd4e417256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyScriptableObject: {fileID: 0}
+  howManyKeysDoDoorsNeed: 0
 --- !u!1 &6658054977927841982
 GameObject:
   m_ObjectHideFlags: 0

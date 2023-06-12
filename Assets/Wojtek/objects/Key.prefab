@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3655242548141034906}
   - component: {fileID: 3655242548141034904}
-  - component: {fileID: 1869690690141780314}
+  - component: {fileID: 6830930004204219864}
   m_Layer: 8
   m_Name: Key
   m_TagString: keyTag
@@ -144,7 +144,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1869690690141780314
+--- !u!114 &6830930004204219864
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3655242548141034980}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9434b5980dd82c5478d68d5310b90d54, type: 3}
+  m_Script: {fileID: 11500000, guid: 199768ed52552d94c9982adaddfe9741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyScriptableObject: {fileID: 11400000, guid: fcdf829807b7dca4791c376c54e440c5, type: 2}
+  keyScriptableObject: {fileID: 11400000, guid: e50105941f9afd545b4fc8b3fe733e94, type: 2}
