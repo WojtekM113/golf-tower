@@ -57,9 +57,12 @@ public class ChargeMechanic : MonoBehaviour
         if (shootWhileMoving)
             return;
 
+
         if (rb.velocity.magnitude < 0.02f)
-        {
-            rb.velocity = new Vector2(0, 0);
+
+        if (rb.velocity.magnitude < 0.12f)
+
+        rb.velocity = new Vector2(0, 0);
             canShoot = true;
         }
     }
