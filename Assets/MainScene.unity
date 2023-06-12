@@ -3008,6 +3008,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5969607851874920572, guid: 169bf50a92a5bfb41915ee8dde8b7a6c, type: 3}
+      propertyPath: howManyKeysDoDoorsNeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6658054977291597836, guid: 169bf50a92a5bfb41915ee8dde8b7a6c, type: 3}
       propertyPath: m_Name
       value: Doors
@@ -3088,7 +3092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b77e3c50bdd7134c8d5703c61138645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyScriptableObject: {fileID: 0}
+  keyScriptableObject: {fileID: 11400000, guid: e50105941f9afd545b4fc8b3fe733e94, type: 2}
 --- !u!1 &2057745821
 GameObject:
   m_ObjectHideFlags: 0
