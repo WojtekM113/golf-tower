@@ -58,9 +58,9 @@ public class ChargeMechanic : MonoBehaviour
             return;
 
  
-        if (rb.velocity.magnitude < 0.02f)
+        
  
-        if (rb.velocity.magnitude < 0.12f)
+        if (rb.velocity.magnitude < 0.16f)
  
         {
             rb.velocity = new Vector2(0, 0);

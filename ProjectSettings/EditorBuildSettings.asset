@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Wojtek/scena gracz.unity
     guid: 4eebd7f571f0bb943a5ca20d2d2a1db6
+  - enabled: 1
+    path: Assets/Level 2.unity
+    guid: afa66f68541711945962734ee29f2158
   m_configObjects: {}

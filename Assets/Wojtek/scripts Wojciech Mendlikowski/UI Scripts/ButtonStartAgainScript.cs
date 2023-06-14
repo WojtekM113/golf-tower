@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class ButtonStartAgainScript : MonoBehaviour
 {
+    public SceneScriptableObject scene;
     public void OnClick()
     {
-        SceneManager.LoadScene("MainScene");
+        string nameOfTheScene = scene.sceneName;
+        SceneManager.LoadScene(nameOfTheScene);
     }
 }
