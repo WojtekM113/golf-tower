@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 trackSelection = true
 fetchPreview = true
 defaultFlags = 0
@@ -8,7 +7,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.DA949528" = "emmision"
+	"last_search.DA949528" = "key"
 	"OpenInspectorPreview.DA949528" = "0"
 	"currentGroup.DA949528" = "all"
 }
@@ -68,6 +67,3 @@ queryBuilder = false
 ignoredProperties = "id;name;classname;imagecontentshash"
 helperWidgetCurrentArea = "all"
 disabledIndexers = ""
-=======
-{}
->>>>>>> MJaworskiPoprawki

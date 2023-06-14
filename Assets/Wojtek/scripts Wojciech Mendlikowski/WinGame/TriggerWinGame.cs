@@ -9,15 +9,25 @@ public class TriggerWinGame : MonoBehaviour
     [SerializeField] private AudioClip congratulationsAduio;
 
     [SerializeField] private ParticleSystem confettiParticle;
+    [SerializeField] private GameObject UiButtonNextLevel;
+    [SerializeField] private GameObject UiButtonStartAgain;
+    private bool CanShowButton;
     
     void Start()
     {
+        CanShowButton = false;
         confettiParticle.Stop();
+        UiButtonNextLevel.SetActive(false);
+        UiButtonStartAgain.SetActive(false);
     }
 
      
     void Update()
     {
+        if (CanShowButton)
+        {
+            ActivateButtons();
+        }
         
     }
 
@@ -25,8 +35,11 @@ public class TriggerWinGame : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            CanShowButton = true;
             PlayParticle();
             PlaySound();
+            ActivateButtons();
+          
         }
 
     }
@@ -41,5 +54,10 @@ public class TriggerWinGame : MonoBehaviour
          
         confettiParticle.Play();
     }
-   
+
+    private void ActivateButtons()
+    {
+        UiButtonNextLevel.SetActive(true);
+        UiButtonStartAgain.SetActive(true);
+    }
 }
