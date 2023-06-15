@@ -25,6 +25,9 @@ public class ChargeMechanic : MonoBehaviour
 
     bool canShoot = true;
 
+    [SerializeField] private AudioClip audioClip;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private float volume = .5f;
 
 
     void Start()
@@ -41,6 +44,8 @@ public class ChargeMechanic : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            audioSource.PlayOneShot(audioClip, volume);
+
             MouseClick();
         }
         if (Input.GetMouseButton(0))
@@ -92,6 +97,7 @@ public class ChargeMechanic : MonoBehaviour
     }
     void MouseDrag()
     {
+      
         if (shootWhileMoving)
         {
             LookAtShootDirection();
