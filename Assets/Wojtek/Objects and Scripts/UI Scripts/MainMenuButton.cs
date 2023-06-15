@@ -10,4 +10,9 @@ public class MainMenuButton : MonoBehaviour
      {   string nameOfTheScene = scene.sceneName;
          SceneManager.LoadScene(nameOfTheScene);
      }
+
+    public void OnExitToDesktopClick()
+    {
+        Application.Quit();
+    }
 }
