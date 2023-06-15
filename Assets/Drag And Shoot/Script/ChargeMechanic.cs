@@ -97,6 +97,7 @@ public class ChargeMechanic : MonoBehaviour
     }
     void MouseDrag()
     {
+
       
         if (shootWhileMoving)
         {

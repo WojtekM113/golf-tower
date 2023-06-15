@@ -8,7 +8,7 @@ public class MainMenuButtonsScript : MonoBehaviour
     
     public  void OnNewGameButtonClick()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("Level 1");
     }
 
     public void OnLoadGameButtonClick()
