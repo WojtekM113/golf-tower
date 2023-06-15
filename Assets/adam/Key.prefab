@@ -156,6 +156,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 199768ed52552d94c9982adaddfe9741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 4366625017710409646, guid: 86eb3ad43e489ef4188d8716ec58f768, type: 3}
   keyCollected: {fileID: 8300000, guid: 8c5495c66bbd37a4890545f495e2907d, type: 3}
   keyScriptableObject: {fileID: 11400000, guid: e50105941f9afd545b4fc8b3fe733e94, type: 2}

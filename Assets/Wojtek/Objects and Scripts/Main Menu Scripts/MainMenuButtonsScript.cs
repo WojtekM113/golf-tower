@@ -15,4 +15,9 @@ public class MainMenuButtonsScript : MonoBehaviour
     {
         Debug.Log("scene)");
     }
+
+    public void OnExitToDesktop()
+    {
+        Application.Quit();
+    }
 }
